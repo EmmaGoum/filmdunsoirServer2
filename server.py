@@ -9,7 +9,7 @@ def index():
 
   p1 = request.args.get("p1")
   p2 = request.args.get("p2")
-  a = p1 + p2
+  a = int(p1) + int(p2)
 
   return jsonify(
     status=200,
