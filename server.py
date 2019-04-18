@@ -14,7 +14,7 @@ def index():
   p2 = request.args.get("p2")
   a = int(p1) + int(p2)
 
-  if a = "":
+  if a == "":
     a = 2
   else:
     a = a
