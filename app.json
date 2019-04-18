@@ -1,0 +1,6 @@
+{
+  "name": "pyHeroku",
+  "description": "Test d'un serveur simpliste en python pour Heroku.",
+  "image": "heroku/python",
+  "keywords": ["python", "flask" ]
+}
