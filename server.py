@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import os
 
+#https://filmdunsoir2.herokuapp.com/?p1="0, 2"&p2="5, 8, 10, 13"&p3="2"&p4="3, 8, 14"&p5="3"&p6="2"&p7="4"&p8="2"&p9="1"&p10="2"&p11="4"&p12="4"&p13="1"&p14="3"&p15="2"&p16="3"&p17="1"&p18="0"&p19="1"&p20="5"&p21="0"&p22="1"
 #https://filmdunsoir2.herokuapp.com/?p1=0, 2&p2=5, 8, 10, 13&p3=2&p4=3, 8, 14&p5=3&p6=2&p7=4&p8=2&p9=1&p10=2&p11=4&p12=4&p13=1&p14=3&p15=2&p16=3&p17=1&p18=0&p19=1&p20=5&p21=0&p22=1
 #rep = ["0, 2", "5, 8, 10, 13", "2", "3, 8, 14", "3", "2", "4", "2", "1", "2", "4", "4", "1", "3", "2", "3", "1", "0", "1", "5", "0", "1"]
 
@@ -11,9 +12,9 @@ port = int(os.environ["PORT"])
 @app.route('/', methods=['GET'])
 def index():
 
-  p1 = request.args.get("p1")
-  p2 = request.args.get("p2")
-  p3 = request.args.get("p3")
+  p1 = request.args.get(p1)
+  p2 = request.args.get(p2)
+  p3 = request.args.get(p3)
   p4 = request.args.get("p4")
   p5 = request.args.get("p5")
   p6 = request.args.get("p6")
