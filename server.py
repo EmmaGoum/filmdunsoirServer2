@@ -9,12 +9,12 @@ port = int(os.environ["PORT"])
 @app.route('/', methods=['GET'])
 def index():
 
-  a=""
+  a = "vide"
   p1 = request.args.get("p1")
   p2 = request.args.get("p2")
   a = int(p1) + int(p2)
 
-  if a == "":
+  if a == "vide":
     a = 2
   else:
     a = a
