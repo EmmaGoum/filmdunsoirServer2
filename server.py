@@ -12,9 +12,9 @@ port = int(os.environ["PORT"])
 @app.route('/', methods=['GET'])
 def index():
 
-  p1 = request.args.get(p1)
-  p2 = request.args.get(p2)
-  p3 = request.args.get(p3)
+  p1 = request.args.get("p1")
+  p2 = request.args.get("p2")
+  p3 = request.args.get("p3")
   p4 = request.args.get("p4")
   p5 = request.args.get("p5")
   p6 = request.args.get("p6")
