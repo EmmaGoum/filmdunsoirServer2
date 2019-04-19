@@ -90,6 +90,7 @@ def index():
   rep_new = np.array([rep_new])
   m = models.load_model("./my_model.h5")
   i = m.predict_classes(rep_new)
+  i = int(i)
 
   return jsonify(
     status=200,
