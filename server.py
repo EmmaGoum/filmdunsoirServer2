@@ -67,6 +67,24 @@ def index():
         elif(i==22):
             cptNewTab = 92     
 
+        if(i<4 or i>16):
+            strElt = ""
+            for elt in data_rep[i]:
+                if (elt != "," and elt != " "):
+                    strElt += elt
+                elif(elt == ","):
+                    valCol = int(strElt)
+                    new_rep[cptNewTab + valCol] = 1
+                    strElt = ""
+            if(strElt != ""):
+                valCol = int(strElt)
+                new_rep[cptNewTab + valCol] = 1
+                strElt = ""            
+        else:
+            new_rep[45+cpt] = (int(data_rep[i])/5)-0.5
+            cpt += 1
+    return new_rep
+
   return jsonify(
     status=200,
     #parameters=request.args
