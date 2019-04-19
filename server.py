@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import os
+from keras import *
 
 #https://filmdunsoir2.herokuapp.com/?p1="0, 2"&p2="5, 8, 10, 13"&p3="2"&p4="3, 8, 14"&p5="3"&p6="2"&p7="4"&p8="2"&p9="1"&p10="2"&p11="4"&p12="4"&p13="1"&p14="3"&p15="2"&p16="3"&p17="1"&p18="0"&p19="1"&p20="5"&p21="0"&p22="1"
 #https://filmdunsoir2.herokuapp.com/?p1=0, 2&p2=5, 8, 10, 13&p3=2&p4=3, 8, 14&p5=3&p6=2&p7=4&p8=2&p9=1&p10=2&p11=4&p12=4&p13=1&p14=3&p15=2&p16=3&p17=1&p18=0&p19=1&p20=5&p21=0&p22=1
