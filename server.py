@@ -88,7 +88,7 @@ def index():
   rep_new = transform_data(rep)
   rep_new = np.asarray(rep_new)
   rep_new = np.array([rep_new])
-  m = models.load_model("./FilmDunSoirIAV1/my_model.h5")
+  m = models.load_model("../../FilmDunSoirIAV1/my_model.h5")
   i = m.predict_classes(rep_new)
 
   return jsonify(
