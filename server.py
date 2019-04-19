@@ -94,7 +94,7 @@ def index():
   return jsonify(
     status=200,
     #parameters=request.args
-    parameters=rep
+    parameters=i
   )
 
 app.run(port=port, host="0.0.0.0")
