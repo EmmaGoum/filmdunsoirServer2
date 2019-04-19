@@ -39,6 +39,34 @@ def index():
 
   rep = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22]
 
+  def transform_data(reponse):
+    nbCol = len(rep)
+    new_rep = np.zeros(92)
+    data_rep = rep
+    cpt = 0
+    for i in range(0, nbCol-1):
+        cptNewTab = 0
+        if(i==1):
+            cptNewTab = 7
+        elif(i==2):
+            cptNewTab = 21
+        elif(i==3):
+            cptNewTab = 27
+        elif(i==16):
+            cptNewTab = 57
+        elif(i==17):
+            cptNewTab = 60
+        elif(i==18):
+            cptNewTab = 64
+        elif(i==19):
+            cptNewTab = 72
+        elif(i==20):
+            cptNewTab = 80
+        elif(i==21):
+            cptNewTab = 90
+        elif(i==22):
+            cptNewTab = 92     
+
   return jsonify(
     status=200,
     #parameters=request.args
